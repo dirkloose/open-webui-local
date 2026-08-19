@@ -35,3 +35,6 @@ Typical tools exposed by the server:
 - `browser_fill_form`: `{ "selector": "string", "value": "string" }`
 
 When using the MCP server via `npx`, ensure the Node.js path is in your environment.
+
+## GitHub (gh CLI)
+The `gh` CLI is installed (`/opt/homebrew/bin/gh`) and authenticated as `dirkloose` over HTTPS. This repo's `origin` remote is `https://github.com/dirkloose/open-webui-local.git` (private). Use `gh` for repo/issue/PR operations instead of raw API calls; plain `git push`/`pull` work directly since `gh auth setup-git` configured the credential helper.

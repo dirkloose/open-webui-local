@@ -19,6 +19,10 @@ Manage the stack with `./manage.sh {start|stop|restart|down}` (wraps `docker com
 
 There is no build, lint, or test tooling in this repo — changes are limited to editing `compose.yaml` and re-running `./manage.sh restart` (or `down` + `start` if volumes/ports/env changed structurally).
 
+## Version control
+
+This repo is pushed to GitHub as a private repository: `dirkloose/open-webui-local` (remote `origin`, branch `main`). The `gh` CLI is installed and authenticated for GitHub operations (issues, PRs, etc.) if needed.
+
 ## Architecture
 
 - `compose.yaml` — single-service Docker Compose file defining the `open-webui` container:
