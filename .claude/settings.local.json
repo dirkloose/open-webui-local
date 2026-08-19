@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm view *)",
+      "mcp__playwright__browser_navigate",
+      "Bash(ls -d ~/Library/Caches/ms-playwright/chromium* 2>/dev/null && echo \"chromium vorhanden\" || echo \"kein chromium gecached\"; node --version 2>&1)"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "playwright"
+  ]
+}
