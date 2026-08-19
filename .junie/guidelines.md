@@ -3,21 +3,21 @@
 ## Node.js and Playwright
 Node.js and Playwright are available in this environment, but they are located in a non-standard path managed by NVM.
 
-- **Node.js Path:** `/Users/dloose/.nvm/versions/node/v22.22.2/bin`
+- **Node.js Path:** `/Users/dloose/.nvm/versions/node/v24.19.0/bin`
 - **Browser automation:** use the Playwright MCP server (`@playwright/mcp`), not a local Puppeteer script.
 
 ### Usage
 To use `node`, `npm`, or `npx` (including the Playwright MCP server), you must prepend the path to the `PATH` environment variable:
 
 ```bash
-export PATH=$PATH:/Users/dloose/.nvm/versions/node/v22.22.2/bin
+export PATH=$PATH:/Users/dloose/.nvm/versions/node/v24.19.0/bin
 node your-script.js
 ```
 
 Or for single commands:
 
 ```bash
-PATH=$PATH:/Users/dloose/.nvm/versions/node/v22.22.2/bin npx @playwright/mcp@latest
+PATH=$PATH:/Users/dloose/.nvm/versions/node/v24.19.0/bin npx @playwright/mcp@latest
 ```
 
 ### Playwright MCP
